@@ -35,7 +35,7 @@ export function Passwords(){
     }
 
     return(
-        <SafeAreaView style={{flex: 1}}>
+        <SafeAreaView style={{flex: 1, backgroundColor: "#f4f7f8"}}>
             <View style={styles.header}>
                 <Text style={styles.title}>Minhas senhas</Text>
             </View>
@@ -49,15 +49,13 @@ export function Passwords(){
                 />
             </View>
 
-
-
         </SafeAreaView>
     )
 }
 
 const styles = StyleSheet.create({
     header:{
-        backgroundColor: "#392de9",
+        backgroundColor: "#4b9093",
         paddingTop: 58,
         paddingBottom: 14,
         paddingLeft: 14,
@@ -74,6 +72,7 @@ const styles = StyleSheet.create({
         flex: 1,
         paddingLeft: 14,
         paddingRight: 14,
+        backgroundColor: "#f4f7f8",
     },
     flatListStyle:{
         flex: 1,

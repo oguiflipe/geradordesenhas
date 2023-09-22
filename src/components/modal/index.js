@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
         marginBottom: 24
     },
     innerPassword:{
-        backgroundColor: "#0e0e0e",
+        backgroundColor: "#322332",
         width: "90%",
         padding: 14,
         borderRadius: 8
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
         padding: 8,
     },
     buttonSave:{
-        backgroundColor: "#392de9",
+        backgroundColor: "#f59a73",
         borderRadius: 8
     },
     textButtonSave:{

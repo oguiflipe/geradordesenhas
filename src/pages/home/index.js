@@ -39,7 +39,7 @@ export function Home() {
   return (
     <View style={styles.container}>
       <Image 
-        source={require("../../assets/logo.png")}
+        source={require("../../assets/lock.png")}
           style={styles.logo}
       />
 
@@ -51,8 +51,8 @@ export function Home() {
           minimumValue={6}
           maximumValue={20}
           maximumTrackTintColor='#ff0000'
-          minimumTrackTintColor='#000'
-          thumbTintColor='#392de9'
+          minimumTrackTintColor='#f59a73'
+          thumbTintColor='#4b9093'
           value={size}
           onValueChange={ (value) => setSize(value.toFixed(0))}
         />
@@ -77,12 +77,14 @@ export function Home() {
 const styles = StyleSheet.create({
   container:{
     flex: 1,
-    backgroundColor: "#f3f3ff",
+    backgroundColor: "#f4f7f8",
     justifyContent: 'center',
     alignItems: 'center'
   },
   logo:{
-    marginBottom: 60
+    marginBottom: 60,
+    width: 150,
+    height: 150
   },
   area:{
     marginTop: 14,
@@ -93,7 +95,7 @@ const styles = StyleSheet.create({
     padding: 6
   },
   button:{
-    backgroundColor: '#392de9',
+    backgroundColor: '#f59a73',
     width: '80%',
     height: 50,
     justifyContent: 'center',
@@ -107,6 +109,7 @@ const styles = StyleSheet.create({
   },
   title:{
     fontSize: 30,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    color: "#322332"
   }
 });
