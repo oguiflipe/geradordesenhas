@@ -1,18 +1,18 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { createStackNavigator } from '@react-navigation/stack';
 
 
-import {Home} from './pages/home';
-import {Passwords} from './pages/passwords';
+
+import {Home} from '../pages/home';
+import {Passwords} from '../pages/passwords';
 
 import {Ionicons} from '@expo/vector-icons';
-import { SplashScreem } from './pages/splash';
+import { SplashScreem } from '../pages/splash';
 
 
 const Tab = createBottomTabNavigator();
 
 
-export function Routes(){
+export default function TabRoutes(){
     return(
         
         <Tab.Navigator>
