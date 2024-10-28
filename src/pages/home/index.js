@@ -1,9 +1,7 @@
 import { useState } from 'react';
-
-
-import { StyleSheet, Text, View, Image, TouchableOpacity, Modal } from 'react-native';
 import Slider from '@react-native-community/slider';
 
+import { StyleSheet, Text, View, Image, TouchableOpacity, Modal } from 'react-native';
 import { ModalPassword } from '../../components/modal';
 
 
@@ -14,7 +12,7 @@ let charset = "abcdefghijklmnopqrstuvwxyz0123456789!@#$%¨&*ABCDEFGHIJKLMNOPQRST
 export function Home() {
 
   //hook que é utilizado para limitar a quantidade de caracteres da senha.
-  const [size, setSize] = useState(6)
+  const [size, setSize] = useState(10)
 
   //armazenando a informação para passar para outra tela.
   const [passwordValue, setPasswordValue] = useState("")
@@ -24,7 +22,6 @@ export function Home() {
 
   //bloco de código que faz a geração de senhas
   function generatePassword(){
-
     let password = "";
 
     for(let i = 0, n = charset.length; i < size; i++){
@@ -48,13 +45,13 @@ export function Home() {
       <View style={styles.area}>
         <Slider 
           style={{height: 50}}
-          minimumValue={6}
+          minimumValue={10}
           maximumValue={20}
-          maximumTrackTintColor='#ff0000'
-          minimumTrackTintColor='#f59a73'
+          maximumTrackTintColor='#280595'
+          minimumTrackTintColor='#3a4db3'
           thumbTintColor='#4b9093'
           value={size}
-          onValueChange={ (value) => setSize(value.toFixed(0))}
+          onValueChange={(value) => setSize(Number(value.toFixed(0)))}
         />
       </View>
 
@@ -95,7 +92,7 @@ const styles = StyleSheet.create({
     padding: 6
   },
   button:{
-    backgroundColor: '#f59a73',
+    backgroundColor: '#280595',
     width: '80%',
     height: 50,
     justifyContent: 'center',
@@ -110,6 +107,6 @@ const styles = StyleSheet.create({
   title:{
     fontSize: 30,
     fontWeight: 'bold',
-    color: "#322332"
+    color: "#374057"
   }
 });

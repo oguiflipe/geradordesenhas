@@ -40,3 +40,10 @@
     "production": {}
   }
 }
+
+
+
+
+Caso apresente erro no build, instalar as libs abaixo:
+  npx expo-doctor
+  npx expo install --check

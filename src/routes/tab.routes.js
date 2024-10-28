@@ -20,15 +20,13 @@ export default function TabRoutes(){
             name='Start'
             component={SplashScreem}
             options={{
-                tabBarInactiveBackgroundColor:"#4b9093",
-                tabBarActiveBackgroundColor:"#4b9093",
                 lazy: true,
                 tabBarShowLabel: false,
                 headerShown: false,
-                tabBarStyle:{backgroundColor: "#FFF"},
+                tabBarStyle:{backgroundColor: "#fff"},
                 tabBarIcon: ({focused, size, color}) => {
                     if(focused){
-                        return <Ionicons size={30} color='#f59a73' name="checkmark-circle"/>
+                        return <Ionicons size={30} color='#3a4db3' name="checkmark-circle"/>
                     }
                     return <Ionicons size={size} color={color} name="checkmark-circle-outline"/>
                 }
@@ -41,10 +39,10 @@ export default function TabRoutes(){
             options={{
                 tabBarShowLabel: false,
                 headerShown: false,
-                tabBarStyle:{backgroundColor: "#FFF"},
+                tabBarStyle:{backgroundColor: "#fff"},
                 tabBarIcon: ({focused, size, color}) => {
                     if(focused){
-                        return <Ionicons size={30} color='#4b9093' name="home"/>
+                        return <Ionicons size={30} color='#3a4db3' name="home"/>
                     }
                     return <Ionicons size={size} color={color} name="home-outline"/>
                 }
@@ -58,10 +56,10 @@ export default function TabRoutes(){
                 tabBarShowLabel: false,
                 headerShown: false,
                 headerShown: false,
-                tabBarStyle:{backgroundColor: "#FFF"},
+                tabBarStyle:{backgroundColor: "#fff"},
                 tabBarIcon: ({focused, size, color}) => {
                     if(focused){
-                        return <Ionicons size={30} color='#4b9093' name="lock-closed"/>
+                        return <Ionicons size={30} color='#3a4db3' name="lock-closed"/>
                     }
                     return <Ionicons size={size} color={color} name="lock-closed-outline"/>
                 }

@@ -12,7 +12,7 @@ export function PasswordItem({data, removePassword}){
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor: '#f59a73',
+        backgroundColor: '#280595',
         padding: 14,
         width: "100%",
         marginBottom: 14,
